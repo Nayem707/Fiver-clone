@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  h1 {
+    font-family: 'Roboto', sans-serif;
+  }
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
