@@ -12,24 +12,26 @@ const GigCard = ({ item }) => {
           <div className='user'>
             <img src={item.pp} alt='' />
             <span>{item.username}</span>
+          </div>
+          <div className='desc'>
             <p>{item.desc}</p>
-            <div className='star'>
-              <span className='icon'>
-                <FaStar />
-              </span>
-              <span>{item.star}</span>
-            </div>
+          </div>
+          <div className='star'>
+            <span className='icons'>
+              <FaStar className='icon' />
+            </span>
+            <span>{item.star}</span>
           </div>
         </div>
 
         <hr />
 
         <div className='details'>
-          <span className='icon'>
-            <FaHeart />
+          <span className='icons'>
+            <FaHeart className='icon' />
           </span>
           <div className='price'>
-            <span>starting</span>
+            <span>Starting</span>
             <h2>${item.price}</h2>
           </div>
         </div>

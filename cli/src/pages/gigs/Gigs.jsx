@@ -30,7 +30,7 @@ const Gigs = () => {
           <div className='right'>
             <span className='sortBy'>sortBy :</span>
             <span className='sortType'>
-              {sort === 'salse' ? 'best Selling' : 'Newst'}
+              {sort === 'salse' ? 'Best selling' : 'Newst'}
             </span>
             <span className='icon' onClick={() => setOpen(!open)}>
               <FaChevronDown />
