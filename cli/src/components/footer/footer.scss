@@ -29,7 +29,7 @@
     }
 
     hr {
-      margin: 50px 0px;
+      margin: 40px 0px;
       height: 0;
       border: 1px solid lightgray;
     }
@@ -42,26 +42,42 @@
       .left {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
+
         span {
-          font-size: 13px;
+          font-size: 15px;
+          .icon {
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
 
       .right {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 50px;
 
         .social {
           display: flex;
           align-items: center;
           gap: 20px;
+
+          .icon {
+            font-size: 25px;
+            cursor: pointer;
+            color: gray;
+          }
         }
         .link {
           display: flex;
           align-items: center;
           gap: 10px;
+
+          .icon {
+            font-size: 20px;
+          }
         }
       }
     }

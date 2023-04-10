@@ -108,6 +108,7 @@ const NavStyle = () => {
               Business
             </Link>
           </div>
+          <hr />
         </>
       )}
 

@@ -1,6 +1,16 @@
 import React from 'react';
 import './footer.scss';
-import { FaFacebook } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaGithub,
+  FaGlobeAmericas,
+  FaDollarSign,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+  FaCannabis,
+  FaCopyright,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -83,25 +93,27 @@ const Footer = () => {
         <div className='bottom'>
           <div className='left'>
             <h2>fiver</h2>
-            <span>@ Fiver international ltd. 2023</span>
+            <span>
+              <FaCopyright className='icon' /> Fiver international ltd. 2023
+            </span>
           </div>
           <div className='right'>
             <div className='social'>
-              <FaFacebook />
-              <FaFacebook />
-              <FaFacebook />
-              <FaFacebook />
-              <FaFacebook />
+              <FaFacebook className='icon' />
+              <FaGithub className='icon' />
+              <FaLinkedin className='icon' />
+              <FaTwitter className='icon' />
+              <FaYoutube className='icon' />
             </div>
             <div className='link'>
-              <FaFacebook />
+              <FaGlobeAmericas className='icon' />
               English
             </div>
             <div className='link'>
-              <FaFacebook />
+              <FaDollarSign className='icon' />
               USD
             </div>
-            <FaFacebook />
+            <FaCannabis className='icon' />
           </div>
         </div>
       </div>
