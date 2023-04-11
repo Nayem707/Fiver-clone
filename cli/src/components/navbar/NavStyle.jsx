@@ -61,6 +61,9 @@ const NavStyle = () => {
                       <Link className='link' to='/gigs'>
                         Gigs
                       </Link>
+                      <Link className='link' to='/mygigs'>
+                        My Gigs
+                      </Link>
                       <Link className='link' to='/add'>
                         Add New Gig
                       </Link>

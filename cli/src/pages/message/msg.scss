@@ -1,0 +1,106 @@
+.message {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1100px;
+    margin: 50px;
+
+    .breacrumbs {
+      font-weight: 300;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .messages {
+      margin: 30px 0px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: 500px;
+      overflow: auto;
+
+      /* width */
+      &::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 15px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: red;
+      }
+
+      .item {
+        display: flex;
+        gap: 10px;
+        max-width: 600px;
+        font-size: 18px;
+
+        &.owner {
+          flex-direction: row-reverse;
+          align-self: flex-end;
+
+          p {
+            border-radius: 20px 0 20px 20px;
+            background-color: royalblue;
+            color: white;
+          }
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        p {
+          padding: 20px;
+          background-color: lightgray;
+          border-radius: 0 20px 20px 20px;
+        }
+      }
+    }
+
+    hr {
+      height: 0;
+      border: 0.5px solid lightgrey;
+    }
+
+    .write {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0px;
+      gap: 15px;
+
+      textarea {
+        width: 80%;
+        height: 80px;
+        padding: 10px;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: rgb(59, 184, 59);
+        padding: 15px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        width: 80px;
+      }
+    }
+  }
+}

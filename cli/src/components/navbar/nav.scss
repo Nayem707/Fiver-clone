@@ -38,6 +38,10 @@
       gap: 24px;
       align-items: center;
 
+      span {
+        cursor: pointer;
+      }
+
       //navbar user releted
       .user {
         display: flex;
@@ -52,11 +56,12 @@
           height: 32px;
           border-radius: 50%;
           object-fit: cover;
+          border: 1px solid lightgray;
         }
         //dropdown btn
         .options {
           position: absolute;
-          top: 50px;
+          top: 52px;
           right: 0;
           padding: 20px;
           background-color: white;
