@@ -12,7 +12,18 @@
     gap: 40px;
     color: lightgray;
   }
+
   img {
     object-fit: contain;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      position: relative;
+      background-color: rgb(76, 107, 91);
+
+      img {
+      }
+    }
   }
 }

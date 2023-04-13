@@ -27,6 +27,7 @@ const Featured = () => {
             <button>AI Service</button>
           </div>
         </div>
+
         <div className='right'>
           <img src='./img/man.png' alt='imag' />
         </div>
