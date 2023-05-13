@@ -4,7 +4,7 @@
 
   .container {
     width: 1100px;
-    margin: 50px;
+    margin: 20px;
 
     .breacrumbs {
       font-weight: 300;
@@ -13,8 +13,8 @@
     }
 
     .messages {
-      margin: 30px 0px;
-      padding: 30px;
+      margin: 20px 0px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -23,7 +23,7 @@
 
       /* width */
       &::-webkit-scrollbar {
-        width: 8px;
+        width: 5px;
         border-radius: 15px;
       }
       /* Track */
@@ -42,7 +42,7 @@
       .item {
         display: flex;
         gap: 10px;
-        max-width: 600px;
+        max-width: 500px;
         font-size: 18px;
 
         &.owner {

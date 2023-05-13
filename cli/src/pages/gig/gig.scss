@@ -118,7 +118,7 @@
             button {
               background-color: white;
               border-radius: 5px;
-              padding: 10px;
+              padding: 8px;
               border: 1px solid gray;
               cursor: pointer;
 
@@ -239,15 +239,15 @@
     .right {
       flex: 1;
       border: 1px solid lightgray;
-      padding: 30px;
+      padding: 25px;
       border-radius: 5px;
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 20px;
       position: sticky;
       top: 150px;
-      max-width: 300px;
-      max-height: 370px;
+      max-width: 330px;
+      max-height: 400px;
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
         rgba(0, 0, 0, 0.24) 0px 1px 2px;
 

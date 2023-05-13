@@ -31,7 +31,7 @@ const Add = () => {
               rows='16'
               placeholder='blabla'
             ></textarea>
-            <button>Crate</button>
+            <button>Create</button>
           </div>
           <div className='right'>
             <label htmlFor='text'>service title</label>
