@@ -1,41 +1,19 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const userSchema = new Schema(
+const MessageSchema = new Schema(
   {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    password: {
+    conversationId: {
       type: String,
       required: true,
     },
-    img: {
-      type: String,
-      required: false,
-    },
-    country: {
+    UserId: {
       type: String,
       required: true,
-    },
-    phone: {
-      type: String,
-      required: false,
     },
     desc: {
       type: String,
-      required: false,
-    },
-    isSeller: {
-      type: Boolean,
-      default: false,
+      required: true,
     },
   },
   {
@@ -43,4 +21,4 @@ const userSchema = new Schema(
   }
 );
 
-export default mongoose.model('User', userSchema);
+export default mongoose.model('Message', MessageSchema);

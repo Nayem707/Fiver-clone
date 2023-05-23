@@ -1,19 +1,9 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const userSchema = new Schema(
+const OrderSchema = new Schema(
   {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    password: {
+    gigId: {
       type: String,
       required: true,
     },
@@ -21,19 +11,27 @@ const userSchema = new Schema(
       type: String,
       required: false,
     },
-    country: {
+    title: {
       type: String,
       required: true,
     },
-    phone: {
-      type: String,
+    price: {
+      type: Number,
       required: false,
     },
-    desc: {
+    sellerId: {
       type: String,
+      required: true,
+    },
+    buyerId: {
+      type: String,
+      required: true,
+    },
+    isCompleted: {
+      type: Boolean,
       required: false,
     },
-    isSeller: {
+    payment_intent: {
       type: Boolean,
       default: false,
     },
@@ -43,4 +41,4 @@ const userSchema = new Schema(
   }
 );
 
-export default mongoose.model('User', userSchema);
+export default mongoose.model('Order', OrderSchema);

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const gigSchema = new Schema(
+const GigSchema = new Schema(
   {
     userId: {
       type: String,
@@ -69,4 +69,4 @@ const gigSchema = new Schema(
   }
 );
 
-export default mongoose.model('Gig', gigSchema);
+export default mongoose.model('Gig', GigSchema);

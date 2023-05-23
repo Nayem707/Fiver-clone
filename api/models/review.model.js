@@ -1,41 +1,24 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const userSchema = new Schema(
+const ReviewSchema = new Schema(
   {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    password: {
+    gigId: {
       type: String,
       required: true,
     },
-    img: {
-      type: String,
-      required: false,
-    },
-    country: {
+    userId: {
       type: String,
       required: true,
     },
-    phone: {
-      type: String,
-      required: false,
+    star: {
+      type: Number,
+      required: true,
+      enum: [1, 2, 3, 4, 5],
     },
     desc: {
       type: String,
       required: false,
-    },
-    isSeller: {
-      type: Boolean,
-      default: false,
     },
   },
   {
@@ -43,4 +26,4 @@ const userSchema = new Schema(
   }
 );
 
-export default mongoose.model('User', userSchema);
+export default mongoose.model('Review', ReviewSchema);
