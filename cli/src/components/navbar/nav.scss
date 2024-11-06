@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #013914;
-  color: white;
   transition: 0.5s all ease;
   position: sticky;
   top: 0;
@@ -19,38 +18,55 @@
     display: flex;
     justify-content: space-between;
     padding: 18px 0px;
+    //*******************
+    //NAV LOGO LEFT-SIDE
+    .nav_logo {
+      font-size: 24px;
 
-    //LEFT_SIDE NAV_LOGO
-    .logo {
-      font-size: 17px;
-      font-weight: bold;
-
-      .text {
-        .dot {
+      .logo_link {
+        color: black;
+        .logo_dot {
           color: #1dbf73;
+          text-decoration: none;
         }
       }
     }
+    //*******************
 
-    //RIGHT_SIDE NAV_LINKS
-    .links {
+    //*******************
+    //NAV LINKS RIGHT-SIDE
+
+    // Common styles for navbar links
+    .navbar__links {
       display: flex;
-      gap: 24px;
+      gap: 44px;
       align-items: center;
+      list-style: none;
 
-      span {
+      .nav_item {
         cursor: pointer;
+        font-weight: 500;
+
+        a {
+          text-decoration: none;
+          color: rgb(119, 119, 119); // Default color (inactive state)
+        }
+
+        .language {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
       }
 
-      //navbar user releted
-      .user {
+      .user_dropdown {
         display: flex;
         align-items: center;
         gap: 10px;
         font-weight: bold;
         cursor: pointer;
         position: relative;
-        //user avater
+
         img {
           width: 32px;
           height: 32px;
@@ -58,37 +74,52 @@
           object-fit: cover;
           border: 1px solid lightgray;
         }
-        //dropdown btn
+
         .options {
           position: absolute;
           top: 52px;
           right: 0;
-          padding: 20px;
+          padding: 14px;
           background-color: white;
-          border-radius: 10px;
           border: 1px solid lightgray;
+          border-radius: 10px;
           display: flex;
           flex-direction: column;
           gap: 10px;
           color: #013914;
-          width: 120px;
+          width: 160px;
           font-weight: 600;
+
+          .buy-btn {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #172e23;
+            cursor: pointer;
+            background-color: inherit;
+            font-weight: 500;
+          }
         }
       }
 
-      //join btn
-      button {
+      .join_btn {
         color: white;
         padding: 10px 18px;
         border-radius: 5px;
-        border: 1px solid white;
+        border: 1px solid #1dbf73;
         cursor: pointer;
-        background-color: transparent;
+        background-color: #1dbf73;
         font-weight: 600;
 
         &:hover {
-          background-color: #1dbf73;
-          border-color: #1dbf73;
+          background-color: #04914f;
+          border-color: #04914f;
+        }
+      }
+
+      // Modifier for active state
+      &.active {
+        .nav_item a {
+          color: rgb(80, 80, 80); // Active state color
         }
       }
     }
@@ -97,15 +128,71 @@
   hr {
     width: 100%;
     height: 0;
-    border: 0.5px solid lightgray;
+    border: 0.2px solid lightgray;
   }
 
   //SCROLL NAV_LINKS ITEM
-  .menu {
-    width: 1000px;
-    padding: 10px 0px;
+  .menu__links {
+    width: 100%;
+    padding: 10px;
     display: flex;
+    gap: 5px;
     justify-content: space-between;
     color: gray;
+    list-style: none;
+    // Allows horizontal scrolling
+
+    .menu__item {
+      cursor: pointer;
+      padding: 0 10px; // Optional padding for spacing
+      color: inherit;
+      font-weight: 600;
+      font-size: 12px;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  // Optional active state modifier if needed for scroll or specific styles
+  .menu__links.active {
+    color: black; // Changes color of all items in active state
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 0.5px solid rgb(129, 129, 129);
+
+    .searchInput {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        background-color: inherit;
+      }
+    }
+
+    button {
+      width: 160px;
+      border: none;
+      cursor: pointer;
+      background-color: inherit;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-left: 50px;
+      }
+    }
   }
 }
